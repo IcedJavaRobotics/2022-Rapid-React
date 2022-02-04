@@ -21,8 +21,9 @@ public final class Constants {
     public static final int BACK_RIGHT_TALON = 1;
 
     //Controllers
-    public static final int CONTROLLER = 5;
-    public static final int JOYSTICK = 6;
+    public static final int CONTROLLER = 1;
+    public static final int JOYSTICK = 0;
+        // ^ these indicate the spot used on the driverstation ^
     public static final double DEADZONE = 0.2;
 
     //Test Victor
