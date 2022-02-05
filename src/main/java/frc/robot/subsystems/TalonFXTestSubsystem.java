@@ -24,7 +24,7 @@ public class TalonFXTestSubsystem extends SubsystemBase {
   
   public void spinMotor() {
 
-    testTalon.set(ControlMode.Velocity, 1);
+    testTalon.set(ControlMode.PercentOutput, 5);
 
     SmartDashboard.putNumber("Talon 4 Velocity", testTalon.getSelectedSensorVelocity());
     SmartDashboard.putNumber("Talon 4 Position", testTalon.getSelectedSensorPosition());
