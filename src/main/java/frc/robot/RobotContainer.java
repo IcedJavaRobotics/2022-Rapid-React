@@ -8,9 +8,11 @@ import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.ExampleCommand;
+import frc.robot.commands.TalonFXTestCommand;
 import frc.robot.commands.VictorTestCommand;
 import frc.robot.subsystems.DriveTrainSubsystem;
 import frc.robot.subsystems.ExampleSubsystem;
+import frc.robot.subsystems.TalonFXTestSubsystem;
 import frc.robot.subsystems.VictorTestSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.RunCommand;
@@ -28,6 +30,7 @@ public class RobotContainer {
   private final DriveTrainSubsystem driveTrainSubsystem = new DriveTrainSubsystem();
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
   private final VictorTestSubsystem victorTestSubsystem = new VictorTestSubsystem();
+  private final TalonFXTestSubsystem talonFXTestSubsystem = new TalonFXTestSubsystem();
 
   XboxController xboxController = new XboxController(Constants.CONTROLLER);
   Joystick flightStick = new Joystick(Constants.JOYSTICK);
@@ -43,7 +46,8 @@ public class RobotContainer {
       new JoystickButton(flightStick, 1)
       .whileHeld(new VictorTestCommand(victorTestSubsystem));
 
-
+      new JoystickButton(flightStick, 2)
+      .whileHeld(new TalonFXTestCommand(talonFXTestSubsystem));
 
     }
 
