@@ -61,6 +61,7 @@ public class RobotContainer {
     }
   }
 
+  /*
   public double getControllerRightX() {
     if ( xboxController != null ) {
       return deadZoneMod(xboxController.getRightX());
@@ -85,6 +86,7 @@ public class RobotContainer {
     }
     
   }
+  */
 
   public double getJoystickX() {
     if ( flightStick != null ) {

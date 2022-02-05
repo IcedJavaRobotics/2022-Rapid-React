@@ -45,11 +45,11 @@ public class DriveTrainSubsystem extends SubsystemBase {
     moveMotor( (X - Y - R), frontRightTalon );
     moveMotor( (X + Y - R), backRightTalon );
 
-    System.out.println( "Talon Velocity: " + frontLeftTalon.getSelectedSensorVelocity());
-    System.out.println( "Talon Position: " + frontLeftTalon.getSelectedSensorPosition());
+    // System.out.println( "Talon Velocity: " + frontLeftTalon.getSelectedSensorVelocity());
+    // System.out.println( "Talon Position: " + frontLeftTalon.getSelectedSensorPosition());
 
-    SmartDashboard.putNumber("Talon Velocity", frontLeftTalon.getSelectedSensorVelocity());
-    SmartDashboard.putNumber("Talon Position", frontLeftTalon.getSelectedSensorPosition());
+    SmartDashboard.putNumber("Talon 4 Velocity", frontLeftTalon.getSelectedSensorVelocity());
+    SmartDashboard.putNumber("Talon 4 Position", frontLeftTalon.getSelectedSensorPosition());
 
   }
 

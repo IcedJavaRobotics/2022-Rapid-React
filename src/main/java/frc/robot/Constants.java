@@ -30,4 +30,7 @@ public final class Constants {
     public static final int TESTVICTOR = 7;
     public static final double VICTOR_SPEED = 0.2;
 
+    //Test TalonFX
+    public static final int TESTTALONFX = 6;
+
 }
