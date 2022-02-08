@@ -33,7 +33,7 @@ public class TalonFXTestSubsystem extends SubsystemBase {
   
   public void stopMotor() {
     
-    testTalon.set(ControlMode.Velocity, 0);
+    testTalon.set(ControlMode.PercentOutput, 0);
 
   }
 
